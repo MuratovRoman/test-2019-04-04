@@ -1,0 +1,109 @@
+<section class="projects js-navigation-section" id="projects">
+    <div class="projects__inner inner">
+        <h3 class="projects__title title">
+            Our Latest Projects.
+        </h3>
+        <div class="projects__subtitle subtitle">
+            Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+        </div>
+        <div class="projects__content">
+            <div class="projects__filter">
+                <ul class="filter-controls">
+                    {% for item in [
+                        {
+                        data: '*',
+                        text: 'All'
+                        },
+                        {
+                        data: 'web-design',
+                        text: 'Web Design'
+                        },
+                        {
+                        data: 'mobile-app',
+                        text: 'Mobile App'
+                        },
+                        {
+                        data: 'illustration',
+                        text: 'Illustration'
+                        },
+                        {
+                        data: 'photography',
+                        text: 'Photography'
+                        }
+                    ] %}
+                        <li class="filter-controls__item">
+                            <button class="filter-btn js-filter-btn{% if loop.first %} is-active{% endif %}" data-filter="{% if loop.first %}*{% else %}.{{ item.data }}{% endif %}">
+                                {{ item.text }}
+                            </button>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="projects__container js-filter">
+                    {% for item in [
+                        {
+                            img: 'project1.jpg',
+                            name: 'Claritas Etiam Processus',
+                            tags: 'Photography, Nature'
+                        },
+                        {
+                            img: 'project2.jpg',
+                            name: 'Quam Nutamus Farum',
+                            tags: 'Graphic Design, Mock-Up'
+                        },
+                        {
+                            img: 'project3.jpg',
+                            name: 'Usus Legentis Videntur',
+                            tags: 'Photography, Holiday'
+                        },
+                        {
+                            img: 'project4.jpg',
+                            name: 'Claritas Etiam Processus',
+                            tags: 'Photography, Nature'
+                        },
+                        {
+                            img: 'project5.jpg',
+                            name: 'Quam Nutamus Farum',
+                            tags: 'Graphic Design, Mock-Up'
+                        },
+                        {
+                            img: 'project6.jpg',
+                            name: 'Usus Legentis Videntur',
+                            tags: 'Photography, Holiday'
+                        }
+                    ] %}
+                        <div class="projects__item projects-item col-4 col-md-6 col-sm-12 js-masonry-item {{ ['web-design', 'mobile-app', 'illustration', 'photography'] | random }}{% if loop.first %} js-masonry-width{% endif %}">
+                            <div class="projects-item__top" style="background-image:url(./img/{{ item.img }})">
+                                <div class="projects-item__overlay">
+                                    <div class="projects-item__controls">
+                                        <button class="projects-item__btn">
+                                            {{ mixins.icon('link') }}
+                                        </button>
+                                        <button class="projects-item__btn">
+                                            {{ mixins.icon('lupa') }}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-item__bottom">
+                                <div class="projects-item__icon">
+                                    {{ mixins.icon('arrow') }}
+                                </div>
+                                <div class="projects-item__name">
+                                    {{ item.name }}
+                                </div>
+                                <div class="projects-item__tags">
+                                    {{ item.tags }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="projects__btn">
+                <a href="#" class="btn">LOAD MORE</a>
+            </div>
+        </div>
+    </div>
+</section>

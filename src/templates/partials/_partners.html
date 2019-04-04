@@ -1,0 +1,16 @@
+<section class="partners js-navigation-section" style="background-image:url(./img/partners-bg.jpg)" id="partners">
+    <div class="partners__inner inner inner_sm">
+        <div class="partners__list">
+            {% for item in [
+                'partner1@2x',
+                'partner2@2x',
+                'partner3@2x',
+                'partner4@2x'
+            ] %}
+                <div class="partners__item">
+                    <img src="./img/{{ item }}.png" alt="partner">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+
+$ralewayFamily: 'Raleway'
+$montserratFamily: 'Montserrat'
+$myriadPro: 'MyriadPro'
+
+// MyriadPro-Regular
+@font-face
+	+fontdefault(normal, 100, $myriadPro)
+	+fontpath('MyriadPro-Regular', 'MyriadPro-Regular', MyriadPro-Regular)
+// Montserrat-Light / Montserrat-UltraLight
+@font-face
+	+fontdefault(normal, 100, $montserratFamily)
+	+fontpath('Montserrat-UltraLight', 'Montserrat-UltraLight', Montserrat-UltraLight)
+@font-face
+	+fontdefault(normal, 300, $montserratFamily)
+	+fontpath('Montserrat Light', 'montserrat-light', montserrat-light)
+
+// Raleway
+@font-face
+	+fontdefault(normal, 400, $ralewayFamily)
+	+fontpath('Raleway-Regular', 'Raleway-Regular', Raleway-Regular)
+@font-face
+	+fontdefault(normal, 500, $ralewayFamily)
+	+fontpath('Raleway-Medium', 'Raleway-Medium', Raleway-Medium)
+@font-face
+	+fontdefault(normal, 600, $ralewayFamily)
+	+fontpath('Raleway-SemiBold', 'Raleway-SemiBold', Raleway-SemiBold)
+@font-face
+	+fontdefault(normal, 700, $ralewayFamily)
+	+fontpath('Raleway-Bold', 'Raleway-Bold', Raleway-Bold)
+@font-face
+	+fontdefault(normal, 800, $ralewayFamily)
+	+fontpath('Raleway-ExtraBold', 'Raleway-ExtraBold', Raleway-ExtraBold)

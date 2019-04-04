@@ -1,0 +1,32 @@
+<section class="mob-devices js-navigation-section" id="features">
+    <div class="mob-devices__inner inner">
+        <div class="mob-devices__content">
+            <div class="mob-devices__img">
+                <img src="./img/iPhone_in_hand.png" alt="img">
+            </div>
+            <div class="mob-devices__info">
+                <div class="mob-devices__title">
+                    Excellent for Mobile Devices.
+                </div>
+                <div class="mob-devices__text">
+                    Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                </div>
+                <ul class="mob-devices__list">
+                    {% for item in [
+                        'Nam liber tempor cum soluta nobis eleifend option;',
+                        'Option congue nihil imperdiet doming id quod mazim placerat facer;',
+                        'Eodem modo typi, qui nunc nobis videntur parum futurum;',
+                        'Investigationes demonstraverunt lectores'
+                    ] %}
+                        <li class="mob-devices__item">
+                            <span class="mob-devices__icon">
+                                {{ mixins.icon('small-arrow') }}
+                            </span>
+                            {{ item }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

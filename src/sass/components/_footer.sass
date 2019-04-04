@@ -1,0 +1,83 @@
+.footer
+    padding: 38px 0 50px
+    background-color: $darkBg
+    &__content
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        font-size: 13px
+        +md
+            flex-direction: column
+            
+    &__left
+        display: flex
+        align-items: center
+        +xs
+            flex-direction: column
+    &__copyright
+        color: $dark
+        +xs
+            margin-bottom: 10px
+        span
+            color: #939393
+    &__right
+        display: flex
+        align-items: center
+        margin-left: 15px
+        +md
+            margin-left: 0
+            margin-top: 15px
+        +xs
+            width: 100%
+    &__item
+        color: $dark
+        position: relative
+        +ms
+            width: 50%
+            display: flex
+            flex-direction: column
+            align-items: center
+        span
+            color: #939393
+            // +ms
+            //     display: block
+        &:not(:first-child)
+            padding-left: 20px
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                left: 9px
+                width: 1px
+                height: 12px
+                transform: translateY(-50%)
+                background-color: #292929
+
+
+.footer-menu
+    display: flex
+    align-items: center
+    &__item
+        position: relative
+        padding-left: 23px
+        &:before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 10px
+            width: 1px
+            height: 12px
+            transform: translateY(-50%)
+            background-color: #292929
+        &:first-child
+            +xs
+                padding-left: 0
+                &:before
+                    display: none
+    &__link
+        text-decoration: none
+        color: $dark
+        transition: color .3s
+        +hover
+            color: $lightBrownText

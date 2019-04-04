@@ -1,0 +1,45 @@
+<section class="counters gradient-bg js-counters-section js-navigation-section" id="stats">
+    <div class="counters__inner inner inner_md">
+        <div class="counters__content row">
+            {% for item in [
+                {
+                    icon: 'users',
+                    number: '3587',
+                    text: 'SATISFIED CLIENTS'
+                },
+                {
+                    icon: 'coffee',
+                    number: '207',
+                    text: 'CUPS OF COFFEE'
+                },
+                {
+                    icon: 'post',
+                    number: '2500',
+                    text: 'BLOG POSTS'
+                },
+                {
+                    icon: 'like',
+                    number: '873',
+                    text: 'likes'
+                },
+                {
+                    icon: 'launch',
+                    number: '900',
+                    text: 'we launched'
+                }
+            ] %}
+                <div class="col-3 counters__col">
+                    <div class="counters__item counters-item">
+                        <div class="counters-item__icon">
+                            {{ mixins.icon(item.icon) }}
+                        </div>
+                        <div class="counters-item__counter js-counter">{{ item.number }}</div>
+                        <div class="counters-item__text">
+                            {{ item.text }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

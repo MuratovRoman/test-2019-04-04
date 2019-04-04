@@ -1,0 +1,63 @@
+.mob-devices
+    padding-top: 74px
+    background-color: $lightBg
+    &__content
+        padding-left: 47px
+        display: flex
+        align-items: center
+        +lg
+            padding-left: 0
+        +md
+            flex-direction: column
+        // flex-wrap: wrap
+    &__img
+        max-width: 423px
+        img
+            display: block
+            width: 100%
+    &__info
+        max-width: 670px
+        padding-bottom: 65px
+        margin-left: 29px
+        +md
+            margin-top: 30px
+            margin-left: 0
+            padding-bottom: 20px
+    &__title
+        font-family: $raleway
+        font-size: 30px
+        font-weight: 600
+        line-height: 1.2
+        color: $dark
+        +sm
+            font-size: 24px
+    &__text
+        margin-top: 30px
+        line-height: 1.75
+        +lg
+            margin-top: 20px
+    &__list
+        margin-top: 35px
+        padding-left: 50px
+        +lg
+            margin-top: 20px
+        +sm
+            padding-left: 0
+    &__item
+        padding-left: 50px
+        position: relative
+        line-height: 2
+        +sm
+            padding-left: 40px
+    &__icon
+        position: absolute
+        display: block
+        left: 0
+        top: 6px
+        font-size: 21px
+        color: $lightBrownText
+        +sm
+            font-size: 18px
+            top: 5px
+        .icon
+            display: block

@@ -1,0 +1,63 @@
+<section id="home" class="hero js-navigation-section">
+    <div class="hero__content hero-slider js-hero-slider-parent">
+        <button class="hero-slider__next js-hero-slider-next">
+            {{ mixins.icon('arrow-right') }}
+        </button>
+        <button class="hero-slider__prev js-hero-slider-prev">
+            {{ mixins.icon('arrow-left') }}
+        </button>
+
+        <div class="hero-slider__slider js-hero-slider">
+            {% for item in [
+                {
+                    img: 'slide-bg.jpg',
+                    subtitle: 'Unique and Modern Design',
+                    title: 'Portfolio PSD Template',
+                    text: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.'
+                },
+                {
+                    img: 'slide-bg.jpg',
+                    subtitle: 'Unique and Modern Design',
+                    title: 'Portfolio PSD Template',
+                    text: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.'
+                },
+                {
+                    img: 'slide-bg.jpg',
+                    subtitle: 'Unique and Modern Design',
+                    title: 'Portfolio PSD Template',
+                    text: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.'
+                },
+                {
+                    img: 'slide-bg.jpg',
+                    subtitle: 'Unique and Modern Design',
+                    title: 'Portfolio PSD Template',
+                    text: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.'
+                },
+                {
+                    img: 'slide-bg.jpg',
+                    subtitle: 'Unique and Modern Design',
+                    title: 'Portfolio PSD Template',
+                    text: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.'
+                }
+            ] %}
+                <div class="hero-slider__item">
+                    <div class="hero-slider__bg" style="background-image:url(./img/{{ item.img }})"></div>
+                    <div class="hero-slider__content">
+                        <div class="hero-slider__subtitle">
+                            {{ item.subtitle }}
+                        </div>
+                        <h3 class="hero-slider__title">
+                            {{ item.title }}
+                        </h3>
+                        <div class="hero-slider__text">
+                            {{ item.text }}
+                        </div>
+                        <div class="hero-slider__btn">
+                            <a href="#" class="btn">GET STARTED</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
