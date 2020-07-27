@@ -37,7 +37,37 @@
 
     &__btn
         display: none
-
+    &__top
+        display: flex
+        justify-content: flex-end
+        padding: 10px 0
+    &__phones
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+.phone
+    // position: relative
+    display: flex
+    align-items: center
+    &:before
+        content: ''
+        width: 19px
+        height: 19px
+        display: block
+        margin-right: 5px
+        background-size: contain
+        background-repeat: no-repeat
+    &__life:before
+        background-image: url(../img/2.png)
+    &__mts:before
+        background-image: url(../img/mts.png)
+    &__kyivstar:before
+        background-image: url(../img/kyivstar.png)
+    &:not(:first-child)
+        margin-left: 20px
+    a
+        color: currentColor
+        text-decoration: none
 .main-menu
     display: flex
     margin-top: 10px
