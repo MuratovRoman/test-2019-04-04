@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-left" viewBox="0 0 39.99 72.961">
-    <path d="M38.021 72.961L-.005 36.482 38.016.002l1.969 2-35.924 34.48L39.99 70.961z" opacity=".502"/>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-left" viewBox="0 0 40 73">
+    <style>
+        .st0{fill:#fff;enable-background:new}
+    </style>
+    <path class="st0" d="M38 73L0 36.5 38 0l2 2L4.1 36.5 40 71l-2 2z"/>
 </symbol><symbol id="icon-arrow-right" viewBox="0 0 39.99 72.961">
     <path d="M1.969 72.961l38.026-36.479L1.974.002l-1.969 2 35.929 34.476L-.005 70.959z" opacity=".5"/>
 </symbol><symbol id="icon-arrow" viewBox="0 0 30.019 10.001">
